@@ -1,7 +1,7 @@
 async function fetchWeatherData() {
   const accessKey = '8089e9523a6e251687a69a6205850cd5';
   const location = 'Tonsberg';
-  const apiUrl = `https://api.weatherstack.com/current?access_key=${accessKey}&query=${location}`;
+  const apiUrl = `http://api.weatherstack.com/current?access_key=${accessKey}&query=${location}`;
   
   try {
     const response = await fetch(apiUrl);
